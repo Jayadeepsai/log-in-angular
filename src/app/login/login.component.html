@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <link rel="stylesheet" href="login.css"> -->
+  <title>Login Page</title>
+  
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Login Page</h1>
+            <form class="myForm">
+                <div class="input-group">
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" placeholder="Enter Email" [(ngModel)]="mail" name="something">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-user-lock"></i>
+                        <input type="password" placeholder="Enter Password" [(ngModel)]="password" name="something">
+                    </div>
+                    <!-- <p>Forgot Password? <a href="#">Click Here</a></p> -->
+                </div>
+                <div class="btn-field">
+                    <button type="button" (click)="login()" style="margin-top: 100px;">Login</button>
+                    <!-- <button type="reset" onclick="myFunction()" value="Reset">Reset</button> -->
+                </div>
+                
+            </form>
+
+        </div>
+
+    </div>
+    
+</body>
+
+
+</html>
